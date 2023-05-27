@@ -86,4 +86,3 @@ EXPOSE WEBSITE localhost:80
 RUN BACKGROUND echo "hello world" && \
     while true; do curl -s http://localhost:80/status; sleep 15; done && \
     tail -f /dev/null
-CMD while true; do sleep 3600; done
